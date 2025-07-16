@@ -24,7 +24,7 @@ resource:
       llm: true
 plugins:
   tools:
-    - "provider/llamaindex_rag.yaml"
+    - "tools/llamaindex_rag.yaml"
 meta:
   version: 1.0.0
   arch:
