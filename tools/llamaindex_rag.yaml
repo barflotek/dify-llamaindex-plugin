@@ -89,4 +89,4 @@ parameters:
     form: llm
 extra:
   python:
-    source: tools/llamaindex_rag.py
+    source: llamaindex_rag.py
