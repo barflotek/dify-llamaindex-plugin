@@ -15,7 +15,7 @@ Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for loc
 
 1. **Go to Dify Studio** → Settings → Plugins
 2. **Choose "Install from GitHub"**
-3. **Enter Repository URL:** `https://github.com/YOUR_USERNAME/dify-llamaindex-plugin`
+3. **Enter Repository URL:** `https://github.com/barflotek/dify-llamaindex-plugin`
 4. **Select Version:** `v1.0.0`
 5. **Install Plugin**
 
