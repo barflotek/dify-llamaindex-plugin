@@ -1,0 +1,92 @@
+identity:
+  name: llamaindex_rag
+  author: Claude AI Assistant
+  label:
+    en_US: LlamaIndex RAG Tool
+    zh_Hans: LlamaIndex RAG 工具
+description:
+  human:
+    en_US: Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for local document querying and knowledge extraction. Supports local file paths, Ollama integration, and semantic search.
+    zh_Hans: 基于LlamaIndex的高级RAG工具，支持本地文档查询和知识提取，集成Ollama和语义搜索。
+  llm: Advanced RAG tool for document querying and knowledge extraction using LlamaIndex with Ollama integration.
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query
+      zh_Hans: 查询
+    human_description:
+      en_US: The question or query to search for in the documents
+      zh_Hans: 在文档中搜索的问题或查询
+    llm_description: Query to search for in the documents
+    form: llm
+  - name: document_path
+    type: string
+    required: true
+    label:
+      en_US: Document Path
+      zh_Hans: 文档路径
+    human_description:
+      en_US: Local folder path containing documents to search (e.g., /data/docs/)
+      zh_Hans: 包含待搜索文档的本地文件夹路径
+    llm_description: Path to documents folder
+    form: llm
+  - name: model_name
+    type: string
+    required: false
+    label:
+      en_US: Ollama Model
+      zh_Hans: Ollama 模型
+    human_description:
+      en_US: Select the Ollama model for LLM responses
+      zh_Hans: 选择用于LLM响应的Ollama模型
+    llm_description: Ollama model to use
+    form: llm
+  - name: top_k
+    type: number
+    required: false
+    label:
+      en_US: Top K Results
+      zh_Hans: 前K个结果
+    human_description:
+      en_US: Number of most relevant chunks to retrieve
+      zh_Hans: 检索最相关块的数量
+    llm_description: Number of results to retrieve
+    form: llm
+  - name: response_mode
+    type: string
+    required: false
+    label:
+      en_US: Response Mode
+      zh_Hans: 响应模式
+    human_description:
+      en_US: Choose between context-only or LLM-synthesized response
+      zh_Hans: 选择仅上下文或LLM合成响应
+    llm_description: Response mode for the query
+    form: llm
+  - name: enable_sales_detection
+    type: boolean
+    required: false
+    label:
+      en_US: Enable Sales Detection
+      zh_Hans: 启用销售检测
+    human_description:
+      en_US: Detect potential sales opportunities in queries
+      zh_Hans: 在查询中检测潜在销售机会
+    llm_description: Enable sales opportunity detection
+    form: llm
+  - name: debug_mode
+    type: boolean
+    required: false
+    label:
+      en_US: Debug Mode
+      zh_Hans: 调试模式
+    human_description:
+      en_US: Enable detailed logging for troubleshooting
+      zh_Hans: 启用详细日志记录以进行故障排除
+    llm_description: Enable debug logging
+    form: llm
+extra:
+  python:
+    source: tools/llamaindex_rag.py

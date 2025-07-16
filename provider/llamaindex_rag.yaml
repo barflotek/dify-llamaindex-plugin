@@ -1,0 +1,20 @@
+identity:
+  author: Claude AI Assistant
+  name: llamaindex_rag
+  label:
+    en_US: LlamaIndex RAG Tool
+    zh_Hans: LlamaIndex RAG 工具
+  description:
+    en_US: Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for local document querying and knowledge extraction. Supports local file paths, Ollama integration, and semantic search.
+    zh_Hans: 基于LlamaIndex的高级RAG工具，支持本地文档查询和知识提取，集成Ollama和语义搜索。
+  icon: icon.svg
+  tags:
+    - search
+    - productivity
+    - other
+credentials_for_provider: {}
+tools:
+  - tools/llamaindex_rag.yaml
+extra:
+  python:
+    source: provider/llamaindex_rag.py
