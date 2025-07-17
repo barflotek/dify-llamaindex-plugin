@@ -6,7 +6,6 @@ label:
   en_US: "LlamaIndex RAG Tool"
   zh_Hans: "LlamaIndex RAG 工具"
 created_at: "2024-07-16T19:45:00.000000000Z"
-icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2MzY2RjEiIHN0cm9rZS13aWR0aD0iMiI+CiAgPHBhdGggZD0iTTkgMTljLTUgMC04LTMtOC02czMtNiA4LTZjMiAwIDQgMSA1LjUgMi41TDIxIDMiLz4KICA8cGF0aCBkPSJtMjEgMy0xIDYtNi0xIi8+CiAgPHBhdGggZD0iTTkgMTBoLjAxIi8+CiAgPHBhdGggZD0iTTkgMTNoLjAxIi8+CiAgPHBhdGggZD0iTTkgMTZoLjAxIi8+Cjwvc3ZnPg==
 description:
   en_US: Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for local document querying and knowledge extraction. Supports local file paths, Ollama integration, and semantic search.
   zh_Hans: 基于LlamaIndex的高级RAG工具，支持本地文档查询和知识提取，集成Ollama和语义搜索。

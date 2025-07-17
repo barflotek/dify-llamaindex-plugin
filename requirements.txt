@@ -2,3 +2,4 @@ dify-plugin
 llama-index==0.10.68
 llama-index-llms-ollama==0.1.5
 llama-index-embeddings-ollama==0.1.2
+pyyaml
