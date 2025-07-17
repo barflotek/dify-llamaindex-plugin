@@ -4,6 +4,10 @@ identity:
   label:
     en_US: LlamaIndex RAG Tool
     zh_Hans: LlamaIndex RAG 工具
+  description:
+    en_US: Advanced RAG tool powered by LlamaIndex for document querying and knowledge extraction
+    zh_Hans: 基于LlamaIndex的高级RAG工具，用于文档查询和知识提取
+  icon: icon.svg
 description:
   human:
     en_US: Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for local document querying and knowledge extraction. Supports local file paths, Ollama integration, and semantic search.

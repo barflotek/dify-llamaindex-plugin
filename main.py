@@ -10,12 +10,30 @@ def patch_manifest():
         
         # Add empty icon if not present to satisfy validation
         if 'icon' not in manifest:
-            manifest['icon'] = ''
+            manifest['icon'] = 'icon.svg'
             
         with open('manifest.yaml', 'w') as f:
             yaml.dump(manifest, f, default_flow_style=False)
+            
+        # Also patch the tool YAML file
+        with open('llamaindex_rag.yaml', 'r') as f:
+            tool_config = yaml.safe_load(f)
+            
+        # Ensure identity has required fields
+        if 'identity' in tool_config:
+            if 'description' not in tool_config['identity']:
+                tool_config['identity']['description'] = {
+                    'en_US': 'Advanced RAG tool for document querying',
+                    'zh_Hans': '文档查询的高级RAG工具'
+                }
+            if 'icon' not in tool_config['identity']:
+                tool_config['identity']['icon'] = 'icon.svg'
+                
+        with open('llamaindex_rag.yaml', 'w') as f:
+            yaml.dump(tool_config, f, default_flow_style=False)
+            
     except Exception:
-        pass  # Ignore errors, use original manifest
+        pass  # Ignore errors, use original files
 
 patch_manifest()
 plugin = Plugin(DifyPluginEnv())
