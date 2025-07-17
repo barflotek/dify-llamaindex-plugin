@@ -1,7 +1,7 @@
 version: 1.0.17
 type: plugin
 author: "langgenius"
-name: "llamaindex_rag_v17"
+name: "llamaindex_rag"
 label:
   en_US: "LlamaIndex RAG Tool"
   zh_Hans: "LlamaIndex RAG 工具"
