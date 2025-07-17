@@ -30,9 +30,28 @@ from llama_index.llms.ollama import Ollama
 from llama_index.embeddings.ollama import OllamaEmbedding
 
 # Dify plugin imports
-from dify_plugin import Tool
+from dify_plugin import Tool, ToolProvider
 from dify_plugin.entities.tool import ToolInvokeMessage, ToolParameter
 from dify_plugin.errors.tool import ToolProviderCredentialValidationError
+
+
+class LlamaIndexRAGProvider(ToolProvider):
+    """
+    LlamaIndex RAG Tool Provider for Dify
+    """
+    
+    def _validate_credentials(self, credentials: dict) -> None:
+        """
+        Validate credentials for LlamaIndex RAG tool
+        Since this is a local tool, just validate basic requirements
+        """
+        try:
+            # Basic validation - check if required dependencies are available
+            import llama_index
+            # Tool doesn't require external credentials, so validation passes
+            pass
+        except ImportError as e:
+            raise ToolProviderCredentialValidationError(f"LlamaIndex dependencies not available: {str(e)}")
 
 
 class LlamaIndexRAGTool(Tool):
