@@ -6,7 +6,7 @@ label:
   en_US: "LlamaIndex RAG Tool"
   zh_Hans: "LlamaIndex RAG 工具"
 created_at: "2024-07-16T19:45:00.000000000Z"
-icon: ""
+icon: icon.svg
 description:
   en_US: Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for local document querying and knowledge extraction. Supports local file paths, Ollama integration, and semantic search.
   zh_Hans: 基于LlamaIndex的高级RAG工具，支持本地文档查询和知识提取，集成Ollama和语义搜索。
