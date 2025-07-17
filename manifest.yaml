@@ -1,11 +1,12 @@
-version: 1.0.0
+version: 1.0.17
 type: plugin
 author: "langgenius"
-name: "llamaindex_rag"
+name: "llamaindex_rag_v17"
 label:
   en_US: "LlamaIndex RAG Tool"
   zh_Hans: "LlamaIndex RAG 工具"
 created_at: "2024-07-16T19:45:00.000000000Z"
+icon: icon.png
 description:
   en_US: Advanced RAG (Retrieval-Augmented Generation) tool powered by LlamaIndex for local document querying and knowledge extraction. Supports local file paths, Ollama integration, and semantic search.
   zh_Hans: 基于LlamaIndex的高级RAG工具，支持本地文档查询和知识提取，集成Ollama和语义搜索。
@@ -25,7 +26,7 @@ plugins:
   tools:
     - "llamaindex_rag.yaml"
 meta:
-  version: 1.0.0
+  version: 1.0.17
   arch:
     - "amd64"
     - "arm64"
