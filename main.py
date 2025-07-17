@@ -10,7 +10,7 @@ def patch_manifest():
         
         # Add empty icon if not present to satisfy validation
         if 'icon' not in manifest:
-            manifest['icon'] = 'icon.svg'
+            manifest['icon'] = ""
             
         with open('manifest.yaml', 'w') as f:
             yaml.dump(manifest, f, default_flow_style=False)
@@ -27,7 +27,7 @@ def patch_manifest():
                     'zh_Hans': '文档查询的高级RAG工具'
                 }
             if 'icon' not in tool_config['identity']:
-                tool_config['identity']['icon'] = 'icon.svg'
+                tool_config['identity']['icon'] = ""
                 
         with open('llamaindex_rag.yaml', 'w') as f:
             yaml.dump(tool_config, f, default_flow_style=False)
